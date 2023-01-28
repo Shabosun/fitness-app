@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/textview_gender"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerWeight"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+    <Spinner
+        android:id="@+id/spinnerHeight"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWeight" />
+
+    <Spinner
+        android:id="@+id/spinnerBirthday"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHeight" />
+
+    <Spinner
+        android:id="@+id/spinnerGoal"
+        android:layout_width="157dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBirthday" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/textview_weight"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/textview_height"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeight" />
+
+    <TextView
+        android:id="@+id/textViewBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/textview_birthday"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeight" />
+
+    <TextView
+        android:id="@+id/textViewGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/textview_goal"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirthday" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="193dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/button_next"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
