@@ -4,13 +4,14 @@ import java.util.UUID;
 
 public class Exercise {
 
-    private UUID id;
+    private long id;
     private String exercise_name;
     private String muscle_group;
     private String reference_on_video;
     private String description;
 
-    public Exercise(UUID id, String exercise_name, String muscle_group, String reference_on_video, String description) {
+
+    public Exercise(long id, String exercise_name, String muscle_group, String reference_on_video, String description) {
         this.id = id;
         this.exercise_name = exercise_name;
         this.muscle_group = muscle_group;
@@ -18,11 +19,11 @@ public class Exercise {
         this.description = description;
     }
 
-    public UUID getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -56,5 +57,12 @@ public class Exercise {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+
+        return exercise_name;
+
     }
 }

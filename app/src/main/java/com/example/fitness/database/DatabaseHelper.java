@@ -20,12 +20,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final class ExerciseTable
     {
-        public static final String NAME = "exercises_view";
+        public static final String NAME = "exercises";
         public static final class Cols
         {
             public static final String EXERCISE_ID = "_id";
             public static final String EXERCISE_NAME = "exercise_name";
-            public static final String MUSCLE_NAME = "muscle_name";
+            public static final String MUSCLE_NAME = "muscle_id";
             public static final String DESCRIPTION = "description";
             public static final String REFERENCE = "reference";
 
@@ -74,7 +74,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //открваем подключение к бд
     public SQLiteDatabase open()throws SQLException {
-
+        copy_db();
         return SQLiteDatabase.openDatabase(DB_PATH, null, SQLiteDatabase.OPEN_READWRITE);
     }
 }
